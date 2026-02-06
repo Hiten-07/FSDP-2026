@@ -1,0 +1,14 @@
+HTML :
+- Uses semantic tags (header, section, footer)
+- Improves readability and SEO
+- Clearly separated content sections
+
+CSS :
+- Uses responsive layout
+- max-width keeps content readable on large screens
+- Media query adapts layout for mobile devices
+
+JavaScript :
+- DOM manipulation using getElementById
+- Simple toggle logic using display property
+- Demonstrates event-driven programming
