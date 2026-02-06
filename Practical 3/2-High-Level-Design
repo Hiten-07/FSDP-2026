@@ -1,0 +1,7 @@
+Architecture :
+- Single HTML file (beginner-friendly)
+- Embedded CSS for layout and responsiveness
+- Embedded JavaScript for behavior
+
+JavaScript Feature :
+- A button that toggles visibility of the Skills section
