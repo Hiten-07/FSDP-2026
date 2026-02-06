@@ -1,0 +1,5 @@
+git commit -m "Initial commit: finance tracker and learning journey README"
+
+Best Practice :
+- Commit messages should be clear and meaningful
+- Avoid vague messages like “update” or “changes”
