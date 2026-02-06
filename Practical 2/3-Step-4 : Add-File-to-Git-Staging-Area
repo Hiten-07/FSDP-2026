@@ -1,0 +1,9 @@
+git add .
+
+Explanation :
+- Stages all files (.) for commit
+- Git is now tracking your code and README
+
+Check status:
+
+git status
