@@ -1,0 +1,18 @@
+Key Concepts Used :
+
+1. File Handling :
+- Append mode ("a") to store data
+- Read mode ("r") to compute totals
+
+2. Data Parsing :
+- split(",") to separate type and amount
+- float() for numeric calculations
+
+3. Functions :
+- Separation of concerns:
+  - add_entry() → writing data
+  - calculate_summary() → processing data
+  - main() → user interaction
+
+4. Error Handling :
+- Gracefully handles missing file (FileNotFoundError)
