@@ -1,0 +1,68 @@
+FILE_NAME = "finance.txt"
+
+
+def add_entry(entry_type, amount):
+    """Store income or expense in the file."""
+    with open(FILE_NAME, "a") as file:
+        file.write(f"{entry_type},{amount}\n")
+
+
+def calculate_summary():
+    """Read file and calculate totals."""
+    total_income = 0
+    total_expense = 0
+
+    try:
+        with open(FILE_NAME, "r") as file:
+            for line in file:
+                entry_type, amount = line.strip().split(",")
+                amount = float(amount)
+
+                if entry_type == "income":
+                    total_income += amount
+                elif entry_type == "expense":
+                    total_expense += amount
+    except FileNotFoundError:
+        pass  # No data yet
+
+    balance = total_income - total_expense
+    return total_income, total_expense, balance
+
+
+def main():
+    while True:
+        print("\n--- Finance Tracker ---")
+        print("1. Add Income")
+        print("2. Add Expense")
+        print("3. View Summary")
+        print("4. Exit")
+
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            amount = float(input("Enter income amount: "))
+            add_entry("income", amount)
+            print("Income added successfully.")
+
+        elif choice == "2":
+            amount = float(input("Enter expense amount: "))
+            add_entry("expense", amount)
+            print("Expense added successfully.")
+
+        elif choice == "3":
+            income, expense, balance = calculate_summary()
+            print("\n--- Summary ---")
+            print(f"Total Income  : {income}")
+            print(f"Total Expense : {expense}")
+            print(f"Balance       : {balance}")
+
+        elif choice == "4":
+            print("Exiting program.")
+            break
+
+        else:
+            print("Invalid choice. Please try again.")
+
+
+if __name__ == "__main__":
+    main()
