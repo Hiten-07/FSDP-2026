@@ -1,0 +1,16 @@
+We need a Python script that can:
+
+1. Accept user input for:
+- Income
+- Expenses
+
+2. Persist data in a text file
+
+3. Read stored data
+
+4.Compute and display a summary:
+- Total Income
+- Total Expenses
+- Balance (Income − Expenses)
+
+This is a classic file-handling + basic data processing task.
