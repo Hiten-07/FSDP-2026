@@ -1,0 +1,9 @@
+Design a responsive personal webpage with the following sections:
+-About
+- Skills
+- Contact
+
+Technologies to use:
+- HTML → Page structure
+- CSS → Styling & responsiveness
+- JavaScript → Simple button toggle interaction
