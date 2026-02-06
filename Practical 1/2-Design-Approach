@@ -1,0 +1,15 @@
+Data Storage Strategy :
+- Use a plain text file (finance.txt)
+- Each entry stored as:
+
+  type,amount
+
+Example:
+
+  income,5000
+  expense,1200
+
+This format is:
+- Human-readable
+- Easy to parse
+- Extendable later (date, category, notes)
